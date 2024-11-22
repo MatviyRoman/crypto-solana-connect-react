@@ -1,0 +1,76 @@
+.mode-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+.mode-btn h4 {
+    margin: 0 0 10px 0;
+}
+
+.mode-btn p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#walletInfo {
+    background: rgba(255,255,255,0.1);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#walletAddress {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+/* Добавляем к существующим стилям */
+
+.stats-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.daily-score, .next-reward {
+    margin: 5px 0;
+}
+
+.reward-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    animation: slideDown 0.5s ease-out;
+    z-index: 1001;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
